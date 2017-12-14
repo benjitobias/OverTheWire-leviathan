@@ -1,0 +1,12 @@
+This one was kinda complicated and I googled the final solution.
+
+The process ran access on the file and then system("bin/cat" + sys.argv[1]) (you get the gist).
+I tried bypassing is with bp in gdb, no joy. I then tried giving "filename; cat password_file" which ran the command injection but the rights still didn't work.
+
+The trick was to create a file called "pass file.txt" and then a symlink to the pass file called pass.
+
+When passing "pass file.txt" as a param, "access" runs on the "pass file.txt" file returning OK. But then the cat command runs on "pass" and then "file.txt" with the setuid permissions.
+
+Cool trick. Use ltrace to find things, could have helped in 01 too.
+
+Ahdiemoo1j
