@@ -1,0 +1,5 @@
+"ls -a" shows a folder called ".backup". Inside is bookmarks.html.
+
+cat .backup/bookmarks.html | grep leviathan1 
+
+password for leviathan1 is rioGegei8m
