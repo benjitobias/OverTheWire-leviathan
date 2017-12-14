@@ -4,3 +4,8 @@ Breakpoint before strmp and then view memory.
 cat /etc/leviathan_pass/leviathan2
 
 ougahZi8Ta
+
+
+--------
+
+Using ltrace would have just shown me strcmp("passwd", "sex") which would have been easier.
