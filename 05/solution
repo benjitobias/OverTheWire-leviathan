@@ -1,0 +1,5 @@
+ln -s /etc/leviathan_pass/leviathan6 /tmp/file.log && ./leviathan5 
+
+ltrace shows that it's trying to access file (that doesn't exist) "/tmp/file.log"
+
+UgaoFee4li
