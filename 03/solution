@@ -1,0 +1,7 @@
+Ok, strace again to see what the comparison is.
+snlprintf.
+I accidentaly ran this under strace and therefore the PE didn't work. Run raw and then I get s shell with PE.
+
+cat /etc/leviathan_pass/leviathan4
+
+vuH0coox6m
